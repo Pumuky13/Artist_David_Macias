@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "FrankGoth";
+    src: url("../fonts/Folio-Std-Medium.ttf");
+}
+
+* {
+    font-family: FrankGoth, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 0;
+    color: #00277e;
+    font-size: 5vw;
+    margin: 2% 0;
+    display: block;
+    position: absolute;
+    writing-mode: sideways-lr;
+    text-orientation: sideways;
+}
+
+h1:hover {
+    color: #f43000;
+}
+
+#menu {
+    position: absolute;
+    padding: 2% 1%;
+    margin-left: 86%;
+    border: 0;
+    width: 10%;
+}
+
+#menu ul, li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+}
+
+#menu ul {
+    position: relative;
+    z-index: 597;
+    float: right;
+}
+
+#menu ul li.hover,
+#menu ul li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+#menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    right: 18%;
+    z-index: 598;
+    width: 100%;
+}
+
+#menu ul ul li {
+    float: none;
+}
+
+#menu ul li:hover > ul {
+    visibility: visible;
+    color: #f43000;
+}
+
+#menu ul ul {
+    top: 0;
+    right: 100%;
+}
+
+#menu ul li {
+    float: none;
+}
+
+#menu span, #menu a {
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#menu:after, #menu ul:after {
+    display: block;
+    clear: both;
+}
+
+#menu ul, #menu li {
+    width: 100%;
+}
+
+#menu a {
+    line-height: 160%;
+    padding: 11px 28px 11px 28px;
+    width: 253px;
+    color: #00277e;
+}
+
+#menu a:hover {
+    line-height: 160%;
+    padding: 11px 28px 11px 28px;
+    width: 253px;
+    color: #f43000;
+}
+
+#menu .has-sub {
+    position: relative;
+}
+
+#menu .has-sub:after, #menu .has-sub > ul > .has-sub:hover:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 9px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.contenedor_diapos {
+    width: 60%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    margin-left: 18%;
+}
+
+.diapo {
+    display: flex;
+}
+
+.contenedor_diapos img {
+    width: 100%;
+    z-index: -2;
+}
+
+button {
+    height: 10%;
+    outline: none;
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+}
+
+button .arrow {
+    border: solid #00277e;
+    border-width: 0 4px 4px 0;
+    display: block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#right-btn {
+    margin: 25% 0 0 0;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+#left-btn {
+    z-index: 0;
+    margin: 25% 0 0 0;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
+
+.texto {
+    width: 100%;
+    margin: 2% 1% 1% 0;
+    height: 667px;
+    position: absolute;
+}
+
+.titulo {
+    color: #5e5e5e;
+}
+
+.texto p {
+    width: 72%;
+    padding-top: 2%;
+    padding-left: 30%;
+    float: left;
+    justify-content: left;
+    color: grey;
+    padding-bottom: 2%;
+}
+.boton { text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 18px;
+    background-color: #00277e;
+    padding: 0 20px 20px 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+}
+.boton:hover {
+    background-color: red;
+    transform: translateY(-7px);
+}
+footer {display: inline; width: 100%;
+    position: absolute; margin-top: 60%; padding-left: 45%}
