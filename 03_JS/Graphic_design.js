@@ -81,4 +81,4 @@ document.addEventListener("DOMContentLoaded", () => {
         pictures: ['../img/design/Free%20font%20desire%201.jpg', '../img/design/Free%20font%20desire.jpg',
             '../img/design/AMANTES%20DEL%20COLTAN.jpg']
     });
-    }
+})
